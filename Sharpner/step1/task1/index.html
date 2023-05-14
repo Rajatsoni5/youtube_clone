@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+    body {
+        background-size: 100%;
+        background-image: url('https://img.freepik.com/free-psd/medical-business-horizontal-banner-template_23-2149488295.jpg?w=2000&t=st=1682329132~exp=1682329732~hmac=fba1f1d377bc41e067e4b5b6ff61e20eee688f50235d294c00d87c6bdff2f388');
+    }
+        .form{
+            margin-left: 73%;
+            text-align: center;
+            border: 3px solid rgb(66, 66, 194);
+            border-radius: 5px;
+            background-color: whitesmoke
+        }
+        .form-start{
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            
+        }
+        .form-start input{
+            margin: 4px ;
+            height: 30px;
+        }
+        .form-start label{
+            text-align: left;
+            margin-left: 4px;
+        }
+        .dateandtime{
+            display: flex;
+            flex-direction: row;
+            margin: 7px  3px;
+        }
+        .dateandtime input{
+            width: 190px;
+            height: 30px;
+        }
+        button{
+            color: whitesmoke;
+            background-color: rgb(66, 66, 194);
+            padding: 9px  3px;
+            margin: 7px  3px;
+            font-size: 20px;
+            font-weight:900;
+
+        }
+    </style>
+</head>
+<body>
+    <form class="form">
+        <div class="form-start">
+          <h1 style="margin-bottom: 1px ; color:  rgb(66, 66, 194);;">Schedule Appointment</h1>
+          <p style="margin: 1px auto;">Please fill this form to schedule call.</p>
+          <hr>
+          <label for="name"><b>Full Name</b></label>
+          <input type="text" placeholder="Your name" name="name" id="name" required>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" id="email" required>
+      
+          <label for="phone"><b>Phone no.</b></label>
+          <input type="phone" placeholder="Enter Phone number" name="phone" id="phone" required>
+
+          <label ><b>Date and Time for call</b></label>
+               <div class="dateandtime">
+                    <input id="date" type="date">
+                    <input id="time" type="time">
+       
+               </div>
+
+          <button type="submit" onclick="submit()" >Get a Call</button>
+        </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
